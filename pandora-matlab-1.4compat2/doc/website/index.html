@@ -1,0 +1,213 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>PANDORA's Toolbox and Other Utilities</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  </head>
+
+  <body>
+    <h1>PANDORA's Toolbox and Other Utilities</h1>
+
+    <h2>Contents</h2>
+
+    <p>
+      <a href="#pandora">The PANDORA Toolbox</a>
+    <p>
+      <a href="#cgmplot">CGunay's Matlab Plots (CGMPLOT)</a>
+    <p>
+      <a href="#gencompress">Gencompress Utility</a>
+    <p>
+      <a href="#related">Related Projects</a>
+
+    <p>
+Translations: <ul>
+<li><a href="http://samostroika.com/pandora-toolbox/">[ Bulgarian ]</a> <i>Thanks to Mark Pozner and courtesy of <a href="http://samostroika.com" target="_blank">Samostroika</a></i>
+<li><a href="http://sciencelakes.com/pandoras-vaerktojskasse-og-andre-forsyningsselskaber/">[ Danish ]</a> <i>Translated by <a href="http://sciencelakes.com/" target="_blank">ScienceLakes</a></i>
+<li><a href="http://www.azoft.com/people/seremina/edu/pandora-rom.html">[ Romanian ]</a> <i>Thanks to <a href="http://www.azoft.com/people/seremina/">Alexandra Seremina</a> from Novosibirsk State University and courtesy of <a href="http://www.azoft.com/" target="_blank">azoft</a></i>
+<li><a href="http://nextranks.com/pandorino-orodja-in-drugi-pripomocki/">[ Slovenian ]</a> <i>Translated by <a href="http://nextranks.com/" target="_blank">NextRanks</a></i>
+    </ul>
+
+    <a name="pandora">
+    <h2>The PANDORA Toolbox</h2></a>
+
+    <p>PANDORA is a Matlab Toolbox that makes database management accessible from your electrophysiology project. 
+
+    <p>PANDORA works by extracting user-defined characteristics from raw neural data (e.g., voltage traces) and creating numerical database tables from them. These tables can then be subjected to further analyses, such as invariant effects, statistical, correlation, and principal components. Publication-ready plots can be produced with an embedded plotting system.
+
+    <h3> Features:</h3>
+    <ul>
+      <li>Makes database management accessible from your electrophysiology project;
+      <li>Works offline within Matlab;
+      <li>Requires no external software;
+      <li>Is object oriented and allows easy extensions;
+      <li>Can easily tie with existing Matlab scripts;
+      <li>Can query database as in SQL.
+    </ul>
+
+      <h3>Requirements:</h3>
+    <ul>
+      <li>Basic Matlab installation for native database support.</li>
+      <li>Optional: Matlab Database Toolbox to import/export from/to
+      external SQL server.</li>
+      <li>Optional: PANDORA will automatically use better filtering
+      functions if the Matlab Signal Processing Toolbox is available.</li>
+    </ul>
+
+    <h3>Licensing:</h3> 
+
+    PANDORA is free to use with the Academic Free License 3.0, but
+    please cite the following paper from your software or publication:
+    <blockquote>Günay C, Edgerton JR, Li S, Sangrey T, Prinz AA, Jaeger D (2009). Database analysis of simulated and recorded electrophysiological datasets with Pandora's toolbox. <em>Neuroinformatics</em>, 7(2):93-111. doi: 10.1007/s12021-009-9048-z.</blockquote>
+
+    <h3>Documentation:</h3>
+    <ul>
+	<li><b>Use Matlab Help to access the most up-to-date
+	documentation for PANDORA.</b></li>
+
+	<li><a href="http://software.incf.org/software/pandora/">Project</a> 
+	  and <a href="http://software.incf.org/software/pandora/wiki">wiki</a> 
+	  pages at the INCF Software Center.</li>
+
+	<li><a href="pandora_all.zip">
+	    Two papers with supplemental materials and examples.</a></li>
+
+	<li>HTML documentation (<a href="html/">browse online</a>, <a
+	href="pandora-1.2b-htmldoc.tar.gz">download</a>) <b>(old!)</b>
+
+	<li><a href="prog-manual.pdf">PDF documentation</a> <b>(old!)</b>
+    </ul>
+
+      <h3>Help</h3>
+      <ul>
+	<li> Discuss your questions at the <a href="https://groups.google.com/forum/?fromgroups#%21forum/model-neuron-parameter-search" target="_new">Parameter Search Google Group</a>.
+	<li> Or, send private questions to >cgunay at emory dot edu<.</li>
+      </ul>
+
+      <h3>Download: </h3>
+    <p>Stable release:
+    <ul>
+      <li>Version 1.3b (<a href="pandora-1.3b.zip">ZIP</a>,<a href="pandora-1.3b.tar.gz">TGZ</a>) (beta release). 
+      </li>
+    </ul>
+    <!--p> Older releases:
+    <ul>
+      <li>Version 1.2b (<a href="pandora-1.2b.zip">ZIP</a>,<a href="pandora-1.2b.tar.gz">TGZ</a>) (beta release). 
+      <li>Version 1.1b (<a href="pandora-1.1b.zip">ZIP</a>,<a href="pandora-1.1b.tar.gz">TGZ</a>) (beta release). 
+      <li><a href="pandora-1.0b.tar.gz">Version 1.0b</a> (beta release). 
+      </li>
+    </ul-->
+
+    See the <a href="CHANGES">revision history</a>.
+
+
+    <p>
+      If you start using PANDORA, please register with me by sending
+      me a short email with your name and affiliation so that I can
+      provide you with upgrade and bugfix information in the
+      future. Thanks!
+
+    <hr>
+    <a name="cgmplot"><h2>CGunay's Matlab Plots (CGMPLOT) </h2></a>
+
+    CGMPLOT improves Matlab plotting by:
+    <ul>
+      <li> Adding intelligent controls to produce publication-quality figures 
+from Matlab
+      <li> Wrapping existing plot commands into objects that can be modularly 
+stacked and superposed
+      <li> In stacked multiplots:
+	<ul>
+	<li> Modular horizontal and vertical stack plots can be nested
+	<li> Minimizes lost space by intelligent options to put axis labels only once
+	  </li>
+	</ul>
+      <li> In superposed plots:
+	<ul>
+	<li> Legends automatically appear matching plotted info
+	<li> Inset plots can be produced.
+	  </li>
+	</ul>
+<li> Specialized bar, errorbar and image plots are defined.
+      </li>
+    </ul>
+
+    <p>
+      Documentation: see PANDORA manual above.
+    <p>
+      Requirements: Matlab.
+    <p>
+      Download: 
+    <ul>
+      <li><a href="cgmplot-1.1b.tar.gz">Version 1.1b</a> (beta release). 
+      </li>
+    </ul>
+
+    <p>
+      Contact: >cgunay at emory dot edu<.
+
+    <p>
+      If you start using CGMPLOT, please register with me by sending
+      me a short email with your name and affiliation so that I can
+      provide you with upgrade and bugfix information in the
+      future. Thanks!
+
+    <hr>
+    <a name="gencompress"><h2>The Gencompress Utility</h2></a>
+
+    Gencompress can compress binary files from the <a
+    href="http://www.genesis-sim.org/GENESIS/">Genesis neural
+    simulator</a> with average compression rates of 10:1*.
+
+    <p>
+      While the compression is lossless, the data is initially
+      truncated to 16-bit resolution. The <a
+      href="http://flac.sourceforge.net/">FLAC lossless audio
+      codec</a> is adapted to achieve this performance.
+
+    <p>
+      <i>* In single-channel intracellular voltage traces. Your mileage
+     may vary with other inputs.</i>
+
+    <p>
+    <h3>Download:</h3>
+    Stable version:
+    <ul>
+      <li>
+	Binary packages for <a
+	href="gencompress-1.0b.i686.tar.gz">i686</a> and <a
+	href="gencompress-1.0b.x86_64.tar.gz">x86_64</a> architecture Linux
+	platforms.  </li>
+
+      <li><a href="gencompress-1.0b.src.tar.gz">Source package</a> for all other architectures and platforms.
+    </ul>
+    Testing version that can handle files >2GB and with >32767 channels:
+    <ul>
+      <li><a href="gencompress-1.1b.src.tar.gz">Source package</a> for all architectures and platforms.
+    </ul>
+
+    <hr>
+    <a name="related"><h2>Related Projects</h2></a>
+
+    <ul>
+    <li>
+      <a href="http://find.bccn.uni-freiburg.de" target="_new"><b>The FIND Matlab
+      Toolbox</b></a> is an open-source analysis toolbox for
+      multiple-neuron recordings and network simulations. FIND stands
+      for Finding Information in Neural Data. It features:
+    <ul>
+      <li>Wide selection of acquisition and simulator input formats based on the <a href="http://neuroshare.sourceforge.net">Neuroshare Project</a>.
+      <li>Spike detection and sorting from extracellular recordings.
+    </ul>
+    <li>
+      <a href="http://neuralensemble.org/trac/NeuroTools" target="_new">NeuroTools</a> is
+a set of tools written in Python to manage, store and analyse computational neuroscience simulations, developed under the umbrella <a href="http://neuralensemble.org" target="_new">NeuralEnsemble</a> initiative.
+    </ul>
+
+    <hr>
+    <address><a href="mailto:cgunay at emory dot edu">Cengiz Gunay</a></address>
+<!-- Created: Wed Jul 18 18:38:10 EDT 2007 -->
+<!-- hhmts start -->
+Last modified: Thu Dec 20 18:07:19 EST 2012
+<!-- hhmts end -->
+  </body>
+</html>

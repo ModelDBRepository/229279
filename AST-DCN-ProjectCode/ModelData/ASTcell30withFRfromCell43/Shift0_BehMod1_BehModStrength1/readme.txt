@@ -1,0 +1,1 @@
+These ASTs were made from PC numbered 30 but with FiringRate=136.1 i.e. PC numbered 43 firing rate. These were needed for paper figures.

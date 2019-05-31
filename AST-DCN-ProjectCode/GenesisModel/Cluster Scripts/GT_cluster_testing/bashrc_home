@@ -1,0 +1,19 @@
+# .bashrc
+
+# User specific aliases and functions
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+#export SGE_ROOT
+#. SGE_ROOT/default/common/settings.sh
+# commented out due to error - todd dec.5.2012
+
+export PATH=$PATH:/home/jedgert/bin/clusterbin
+
+source /usr/local/sge/default/common/settings.sh
+
+. ~jaegerlab/brute_scripts/rc-ellipse.sh
+export PATH=$PATH:/home/selva/genesis_std/genesis2.3_std
